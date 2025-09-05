@@ -248,7 +248,7 @@ game:GetService("ReplicatedStorage"):WaitForChild("RE"):WaitForChild("1RPNam1eCo
 
 local args = {
     [1] = "RolePlayBio",
-    [2] ="-SCRPTS LEON 1.2V'"
+    [2] ="-SCRPTS NEYMAR 1.2V'"
 }
 
 game:GetService("ReplicatedStorage"):WaitForChild("RE"):WaitForChild("1RPNam1eTex1t"):FireServer(unpack(args))
