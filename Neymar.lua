@@ -1,4 +1,4 @@
-shared.LoaderTitle = "SCRPTS NEYMAR";
+shared.LoaderTitle = "جار تحميل سكربت Neymar Hub";
 shared.LoaderKeyFrames = {
     [1] = {
         1,
@@ -25,7 +25,7 @@ local v2 = {
             Topic = Color3.fromRGB(7, 167, 0),
             Title = Color3.fromRGB(7, 167, 0),
             LoaderBackground = Color3.fromRGB(255, 255, 255),
-            LoaderSplash = Color3.fromRGB(150, 0, 0)
+            LoaderSplash = Color3.fromRGB(7, 167, 0)
         }
     },
     Keyframes = shared.LoaderKeyFrames or {
@@ -102,7 +102,7 @@ local v8 = CreateObject("TextLabel", {
     Name = "UserName",
     Parent = v6,
     BackgroundTransparency = 1,
-    Text = "اهلا بك في سكربت نيمار🇧🇷",
+    Text = "اهلا بك في السكربت",
     Position = UDim2.new(0, 75, 0, 10),
     Size = UDim2.new(0, 200, 0, 50),
     Font = Enum.Font.GothamBold,
@@ -147,8 +147,7 @@ local v11 = CreateObject("Frame", {
     BackgroundColor3 = v2.LoaderData.Colors.LoaderBackground,
     BorderSizePixel = 0,
     Position = UDim2.new(0.5, 0, 0, 70),
-    Size = UDim2.new(0.8500000238418579, 0, 0, 24)
-});
+    Size = UDim2.new(0.8500000238418579, 0, 0, 24)});
 v4(8, v11);
 local v12 = CreateObject("Frame", {
     Name = "Progress",
@@ -221,71 +220,45 @@ TweenObject(v6, 0.25, {
 wait(0.25);
 v5:Destroy();
 
-local Sound = Instance.new("Sound", game:GetService("SoundService"));
-Sound.SoundId = "rbxassetid://73962170939481";
-Sound:Play();
 
-game.Players.LocalPlayer.Character.Humanoid.Health = 0
-wait(0.1)
-game.StarterGui:SetCore("SendNotification", {
-    Title = "LEON HUB";
-    Text = "تم التشــغَيل-"; -- ARAB TEAM
-    Duration = 5;
-})
-
-
-game:GetService("ReplicatedStorage").RE["1RPNam1eTex1t"]:FireServer("RolePlayName", "سكــربت الــمطور نيمار —")
-
-local args = {
-    [1] = "PickingRPNameColor",
-    [2] = Color3.fromRGB(7, 167, 0), -- Amarelo
-}
-
-game:GetService("ReplicatedStorage"):WaitForChild("RE"):WaitForChild("1RPNam1eColo1r"):FireServer(unpack(args))
-
-
-
-
-local args = {
-    [1] = "RolePlayBio",
-    [2] ="-SCRPTS NEYMAR 1.2V'"
-}
-
+--=====================--
+--     RolePlay Edit
+--=====================--
+local args = {"RolePlayName","سكربت المطور Neymar Hub V1.1"}
 game:GetService("ReplicatedStorage"):WaitForChild("RE"):WaitForChild("1RPNam1eTex1t"):FireServer(unpack(args))
 
-local args = {
-    [1] = "PickingRPBioColor",
-    [2] = Color3.fromRGB(p, 0, 0), -- Amarelo
-}
+local args = {"PickingRPNameColor",Color3.fromRGB(150,0,0)}
+game:GetService("ReplicatedStorage"):WaitForChild("RE"):WaitForChild("1RPNam1eColo1r"):FireServer(unpack(args))
 
-game:GetService("ReplicatedStorage").RE:FindFirstChild("1RPNam1eTex1t"):FireServer(unpack(args))
-loadstring(game:HttpGet(("https://raw.githubusercontent.com/KeonXHub/Red-gui/refs/heads/main/Red%20Hub%20Gui.txt")))()
+local args = {"RolePlayBio","Neymar Hub"}
+game:GetService("ReplicatedStorage"):WaitForChild("RE"):WaitForChild("1RPNam1eTex1t"):FireServer(unpack(args))
+
+local args = {"PickingRPBioColor",Color3.fromRGB(20,20,20)}
+game:GetService("ReplicatedStorage"):WaitForChild("RE"):WaitForChild("1RPNam1eColo1r"):FireServer(unpack(args))
+
+--=====================--
+--   واجهة مخصصة
+--=====================--
+loadstring(game:HttpGet("https://raw.githubusercontent.com/youssefhesham542/Y2-Hub/main/interface2"))()
+
 MakeWindow({
-  Hub = {
-    Title = "LEON HUB 1.2V | BROOKHAVEN ",
-    Animation = "جــار التــحميل..."
-  },
-  Key = {
-    KeySystem = false,
-    Title = "Key System",
-    Description = "",
-    KeyLink = "",
-    Keys = {"1234"},
-    Notifi = {
-      Notifications = true,
-      CorrectKey = "Running the Script...",
-      Incorrectkey = "The key is incorrect",
-      CopyKeyLink = "Copied to Clipboard"
+    Hub = {
+        Title = "Neymar Hub | Brookhaven RP",
+        Animation = "سكربت المطور Neymar Hub"
+    },
+    Key = {
+        KeySystem = false,
+        Title = "Key System",
+        Description = "",
+        KeyLink = "",
+        Keys = {"12924"},
+        Notifi = {
+            Notifications = true,
+            CorrectKey = "Running the Script...",
+            Incorrectkey = "The key is incorrect",
+            CopyKeyLink = "Copied to Clipboard"
+        }
     }
-  }
-})
-MinimizeButton({
-    Image = "rbxassetid://73962170939481",
-    Size = {50, 50},
-    Color = Color3.fromRGB(255, 0, 0),
-    Corner = true,
-    Stroke = true,
-    StrokeColor = Color3.fromRGB(255, 0, 0)
 })
 
 
